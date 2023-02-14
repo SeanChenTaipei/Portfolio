@@ -80,7 +80,7 @@
             <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active"  aria-current="page" href="#education">
+                        <a class="nav-link active" aria-current="page" href="#education">
                             <i class="bi bi-mortarboard-fill icon"></i>
                             <span class="mx-1">Education</span>
                         </a>
@@ -334,13 +334,21 @@
     
     
     
-
-    
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Boostrap Scripts -->
     <script defer 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
         crossorigin="anonymous">
+    </script>
+    
+    
+    <script>
+        $(".navbar .nav-link").on("click", function(){
+            $(".navbar").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
     </script>
 </body>
 <footer>
