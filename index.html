@@ -12,9 +12,9 @@
             font-family: Georgia,serif;
         }
         body {
-            padding-top: 50px;
-            padding-bottom: 70px;
-            font-size: 1.1vw;
+            padding-top: 10vh;
+            /* padding-bottom: 70px; */
+            /* font-size: 1.1vw; */
             font-family: Georgia, sans-serif!important;
         }
         /* h5 {
@@ -118,222 +118,285 @@
     </nav>
 </header>
 <body>
-    <div class="container-lg" style="font-size: 2.0vmin;">
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-10">
-                <p class="my-0" style="color: #1f1e61;"><strong>About me</strong></p>
-                <hr class="my-1">
+    <div class="container-fluid" style="min-height:100%;position:relative;">
+        <div class="container-lg" style="font-size: 2.0vmin;">
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-10">
+                    <a
+                        class="btn btn-sm btn-close-white p-0" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target=".multi-collapse" 
+                        aria-expanded="false" 
+                        aria-controls="collapse-1 collapse-2"
+                        style="color: #1f1e61;">
+                        <strong>About me <i class="bi bi-caret-left-fill" style="animation: cursor 1s infinite;"></i></strong>
+                    </a>
+                    <hr class="my-1">
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-7">
-                <div class="d-flex flex-column" style="">
-                    <div class="p-0 m-0">
-                        <p class="m-0" style="color: #0f0e5d; font-size: 1.2vmin;">
-                            <button 
-                                class="btn btn-sm btn-close-white p-0" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target=".multi-collapse" 
-                                aria-expanded="false" 
-                                aria-controls="collapse-1 collapse-2">
-                                <strong>Chun-Hsien Chen <i class="bi bi-caret-left-fill" style="animation: cursor 1s infinite;"></i></strong>
-                            </button>
-                        </p>
-                        <div class="collapse show multi-collapse" id="collapse-1">
-                            <div class="card card-body border-0 p-2">
-                                <ul class="list-unstyled">
-                                    <li><i class="bi bi-geo-alt-fill"></i><span class="px-1">Taipei, Taiwan</span></li>
-                                    <li><i class="bi bi-buildings-fill"></i><span class="px-1">NTU Math</span></li>
-                                    <li><i class="bi bi-envelope-fill"></i><span class="px-1">
-                                        <a class="text-dark" href="mailto: r10246002@ntu.edu.tw">r10246002@ntu.edu.tw</a>
-                                    </span></li>
-                                    <li><i class="bi bi-github"></i><span class="px-1">
-                                        <a class="text-dark" href="https://github.com/SeanChenTaipei">SeanChenTaipei</a>
-                                    </span></li>
-                                    
-                                </ul>
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-7">
+                    <div class="d-flex flex-column">
+                        <div class="">
+                            <div class="collapse show multi-collapse" id="collapse-1">
+                                <div class="card card-body border-0 p-2">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-geo-alt-fill"></i><span class="px-1">Taipei, Taiwan</span></li>
+                                        <li><i class="bi bi-buildings-fill"></i><span class="px-1">NTU Math</span></li>
+                                        <li><i class="bi bi-envelope-fill"></i><span class="px-1">
+                                            <a class="text-dark" href="mailto: r10246002@ntu.edu.tw">r10246002@ntu.edu.tw</a>
+                                        </span></li>
+                                        <li><i class="bi bi-github"></i><span class="px-1">
+                                            <a class="text-dark" href="https://github.com/SeanChenTaipei">SeanChenTaipei</a>
+                                        </span></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse multi-collapse" id="collapse-2" style="font-size: 1.2vw;">
+                                <div class="card card-body border-0 p-1">
+                                    <p>Hello, my name is Chun-Hsien (陳俊憲), and you can also call me Sean.
+                                        I am a graduate student at National Taiwan University's Institute of Applied Mathematics,
+                                        where I am specializing in financial engineering and machine learning .</p>
+                                    <p>My background and academic interests make me a well-rounded and knowledgeable
+                                        individual, with a passion for using mathematical models and algorithms
+                                        to solve real-world problems in finance and data analysis. 
+                                        I believe that my unique experiences and perspectives will
+                                        continue to enrich my academic journey as I explore new
+                                        opportunities in the field of mathematics. <br>
+                                        I am looking forward to meeting and connecting with others in the math and finance community.</p>  
+                                </div>
                             </div>
                         </div>
-                        <div class="collapse multi-collapse" id="collapse-2">
-                            <div class="card card-body border-0 p-1">
-                                <p>Hello, my name is Chun-Hsien (陳俊憲), and you can also call me Sean.
-                                    I am a graduate student at National Taiwan University's Institute of Applied Mathematics,
-                                    where I am specializing in financial engineering and machine learning .</p>
-                                <p>My background and academic interests make me a well-rounded and knowledgeable
-                                    individual, with a passion for using mathematical models and algorithms
-                                    to solve real-world problems in finance and data analysis. 
-                                    I believe that my unique experiences and perspectives will
-                                    continue to enrich my academic journey as I explore new
-                                    opportunities in the field of mathematics. <br>
-                                    I am looking forward to meeting and connecting with others in the math and finance community.</p>  
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/me.jpg"
+                        class="img-fluid rounded float-end"
+                        width="60%"
+                        height="60%">
+                </div>
+            </div>
+        </div>
+        <!-- Education -->
+        <p id="education"></p>
+        <div class="container-lg my-2">
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-10">
+                    <p class="my-0 text-lg" style="color: #1f1e61;"><strong>Education</strong></p>
+                    <hr class="my-1">
+                </div>
+            </div>
+            <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
+                <div class="col-7">
+                    <p class="my-1"><strong>National Taiwan University</strong></p>
+                    <p class="my-1">M.S. in Applied Mathematics</p>
+                    <p class="my-1">Nov. 2021 - Jun. 2023</p>
+                    <p class="my-1">Advisor:
+                        <a href="http://mx.nthu.edu.tw/~chhan/" target="_blank">Prof. Chuan-Hsiang Han</a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/ntu.jpeg"
+                        class="rounded img-fluid float-end pt-3"
+                        alt=""
+                        width="45%"
+                        height="45%">
+                </div>
+            </div>
+
+            <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
+                <div class="col-7">
+                    <p class="my-1"><strong>National Chengchi University</strong></p>
+                    <p class="my-1">B.S. in Applied Mathematics, Minor in Statistics</p>
+                    <p class="my-1">Nov. 2017 - Jun. 2021</p>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/nccu.png"
+                        class="rounded img-fluid float-end pt-3"
+                        alt=""
+                        width="47%"
+                        height="47%">
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Experience -->
+        <div class="container-lg my-2" id="experience">
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-10">
+                    <p class="my-0" style="color: #1f1e61;"><strong>Experience</strong></p>
+                    <hr class="my-1">
+                </div>
+            </div>
+            <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
+                <div class="col-7">
+                    <p class="my-1"><strong>NCTS</strong></p>
+                    <p class="my-1">Undergraduate Student Researcher</p>
+                    <p class="my-1">Topic: Variational models and numerical methods on image processing</p>
+                    <p class="my-1">Jul. 2020 - Aug. 2020</p>
+                    <p class="my-1">Advisor:
+                        <a href="http://www.math.ncu.edu.tw/~syyang/" target="_blank">Prof. Suh-Yuh Yang</a>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/ncts.jpeg"
+                        class="rounded img-fluid float-end pt-5"
+                        width="50%"
+                        height="60%">
+                </div>
+            </div>
+
+            <div class="row justify-content-center flex-nowrap py-4" style="font-size: 1.5vmin">
+                <div class="col-7">
+                    <p class="my-1"><strong>Shanghai Far Eastern It Co., Ltd.</strong></p>
+                    <p class="my-1">Data Analyst Intern</p>
+                    <p class="my-1">Jun. 2019 - Aug. 2019</p>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/fit.jpg"
+                        class="rounded img-fluid float-end"
+                        alt=""
+                        width="50%"
+                        height="50%">
+                </div>
+            </div>
+
+            <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
+                <div class="col-7">
+                    <p class="my-1"><strong>Teaching Assitant</strong></p>
+                    <p class="my-1">Teaching assitant of Python Computer Programming at NTU</p>
+                    <p class="my-1">Nov. 2021 - Jun. 2023</p>
+                </div>
+                <div class="col-3">
+                    <img
+                        src="./static/imgs/ntu.jpeg"
+                        class="rounded img-fluid float-end pe-1"
+                        alt=""
+                        width="45%"
+                        height="45%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="container-lg my-2" id="award">
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-10">
+                    <p class="my-0" style="color: #1f1e61;"><strong>Awards</strong></p>
+                    <hr class="my-1">
+                    <ul class="px-3" style="font-size: 2.2vmin;">
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2017</li>
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2018</li>
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2018</li>
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2019</li>
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2019</li>
+                        <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2020</li>
+                        <li class="py-1">The Memorial Scholarship Foundation to Lin Hsiung Chen, Dec. 2020</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project -->
+        <div class="container-lg my-2" id="project">
+            <div class="row justify-content-center flex-nowrap">
+                <div class="col-10">
+                    <hr class="my-1">
+                    <p class="mt-3" style="color: #1f1e61;"><strong>Projects</strong></p>
+                    <div class="card">
+                        <div class="card-body">
+                          <div class="row flex-nowrap py-4" style="font-size: 1.5vmin">
+                                <div class="col-8">
+                                    <h5 class="card-title">Projects in Natural Language Processing</h5>
+                                    <p class="my-1"><strong>Adaptive deep learning 2022</strong></p>
+                                    <p class="my-1">Intent Classification、Slot Tagging、Chinese Question Answering、Natural Language Generation</p>
+                                    <p class="my-1">
+                                        Sep. 2022 - Dec. 2022
+                                        <a type="button" class="btn btn-sm rounded-circle" target="_blank" href="https://github.com/SeanChenTaipei/NTU_ADL_2022">
+                                            <i class="bi bi-github icon"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-4" style="align-self: center;">
+                                    <img
+                                        src="./static/imgs/adl.png"
+                                        class="rounded img-fluid float-end"
+                                        width="80%"
+                                        height="80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                          <div class="row flex-nowrap py-4" style="font-size: 1.5vmin">
+                                <div class="col-8">
+                                    <h5 class="card-title">Hahow User Course&Topic Prediction</h5>
+                                    <p class="my-1"><strong>Adaptive deep learning 2022 Final Competition</strong></p>
+                                    <p class="my-1"></p>
+                                    <p class="my-1">
+                                        Dec. 2022 - Jan. 2023
+                                        <a type="button" class="btn btn-sm rounded-circle" target="_blank" href="https://github.com/SeanChenTaipei/NTU_ADL_2022">
+                                            <i class="bi bi-github icon"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-4" style="align-self: center;">
+                                    <img
+                                        src="./static/imgs/adl2.png"
+                                        class="rounded img-fluid float-end"
+                                        width="80%"
+                                        height="80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                          <div class="row flex-nowrap py-4" style="font-size: 1.5vmin">
+                                <div class="col-8">
+                                    <h5 class="card-title">Prediction of Suspected Money Laundering Transactions</h5>
+                                    <p class="my-1"><strong>T-Brain Machine Learning Competition</strong></p>
+                                    <p class="my-1"> The competion provides Suspicious Activity Report (SAR) data,
+                                        for participants to design algorithms and build models that
+                                        more accurately filter out suspicious transactions that require
+                                        reporting, thereby reducing the false positive rate of suspicious 
+                                        activities. We build the prediction model using tree-based models to deal with rare events,
+                                        and finally achieve private raking of 14th. 
+                                    </p>
+                                    <p class="my-1">Oct. 2019 - Dec. 2022
+                                        <a type="button" class="btn btn-sm rounded-circle" target="_blank" href="https://grave-libra-0e7.notion.site/ML-2022-Final-Project-Group-9-8dcc0cc83aaf4f4da80cef321b50d890">
+                                            <i class="bi bi-file-earmark-fill"></i>
+                                        </a>
+                                        <a type="button" class="btn btn-sm rounded-circle" target="_blank" href="https://tbrain.trendmicro.com.tw/Competitions/Details/24">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                        
+                                    </p>
+                                </div>
+                                <div class="col-3" style="align-self: center;">
+                                    <img
+                                        src="./static/imgs/fit.jpg"
+                                        class="rounded img-fluid float-end"
+                                        alt=""
+                                        width="50%"
+                                        height="50%">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3 text-center pt-3">
-                <img
-                    src="./static/imgs/me.jpg"
-                    class="rounded img-fluid float-end"
-                    alt=""
-                    width="60%"
-                    height="60%">
-            </div>
         </div>
     </div>
-    <!-- Education -->
-    <p id="education"></p>
-    <div class="container-lg my-2" style="font-size: 2.0vmin;">
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-10">
-                <p class="my-0" style="color: #1f1e61;"><strong>Education</strong></p>
-                <hr class="my-1">
-            </div>
-        </div>
-        <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
-            <div class="col-7">
-                <p class="my-1"><strong>National Taiwan University</strong></p>
-                <p class="my-1">M.S. in Applied Mathematics</p>
-                <p class="my-1">Nov. 2021 - Jun. 2023</p>
-                <p class="my-1">Advisor:
-                    <a href="http://mx.nthu.edu.tw/~chhan/" target="_blank">Prof. Chuan-Hsiang Han</a>
-                </p>
-            </div>
-            <div class="col-3">
-                <img
-                    src="./static/imgs/ntu.jpeg"
-                    class="rounded img-fluid float-end"
-                    alt=""
-                    width="45%"
-                    height="45%">
-            </div>
-        </div>
-
-        <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
-            <div class="col-7">
-                <p class="my-1"><strong>National Chengchi University</strong></p>
-                <p class="my-1">B.S. in Applied Mathematics, Minor in Statistics</p>
-                <p class="my-1">Nov. 2017 - Jun. 2021</p>
-            </div>
-            <div class="col-3">
-                <img
-                    src="./static/imgs/nccu.png"
-                    class="rounded img-fluid float-end"
-                    alt=""
-                    width="47%"
-                    height="47%">
-            </div>
-        </div>
-        
-    </div>
-
-    <!-- Experience -->
-    <div class="container-lg my-2" id="experience" style="font-size: 2.0vmin;">
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-10">
-                <p class="my-0" style="color: #1f1e61;"><strong>Experience</strong></p>
-                <hr class="my-1">
-            </div>
-        </div>
-        <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
-            <div class="col-7">
-                <p class="my-1"><strong>NCTS</strong></p>
-                <p class="my-1">Undergraduate Student Researcher</p>
-                <p class="my-1">Topic: Variational models and numerical methods on image processing</p>
-                <p class="my-1">Jul. 2020 - Aug. 2020</p>
-                <p class="my-1">Advisor:
-                    <a href="http://www.math.ncu.edu.tw/~syyang/" target="_blank">Prof. Suh-Yuh Yang</a>
-                </p>
-            </div>
-            <div class="col-3">
-                <img
-                    src="./static/imgs/ncts.jpeg"
-                    class="rounded img-fluid float-end pt-4"
-                    alt=""
-                    width="50%"
-                    height="60%">
-            </div>
-        </div>
-
-        <div class="row justify-content-center flex-nowrap py-4" style="font-size: 1.5vmin">
-            <div class="col-7">
-                <p class="my-1"><strong>Shanghai Far Eastern It Co., Ltd.</strong></p>
-                <p class="my-1">Data Analyst Intern</p>
-                <p class="my-1">Jun. 2019 - Aug. 2019</p>
-            </div>
-            <div class="col-3">
-                <img
-                    src="./static/imgs/fit.jpg"
-                    class="rounded img-fluid float-end"
-                    alt=""
-                    width="50%"
-                    height="50%">
-            </div>
-        </div>
-
-        <div class="row justify-content-center flex-nowrap py-3" style="font-size: 1.5vmin">
-            <div class="col-7">
-                <p class="my-1"><strong>Teaching Assitant</strong></p>
-                <p class="my-1">Teaching assitant of Python Computer Programming at NTU</p>
-                <p class="my-1">Nov. 2021 - Jun. 2023</p>
-            </div>
-            <div class="col-3">
-                <img
-                    src="./static/imgs/ntu.jpeg"
-                    class="rounded img-fluid float-end pe-1"
-                    alt=""
-                    width="45%"
-                    height="45%">
-            </div>
-        </div>
-    </div>
-
-    <!-- Awards -->
-    <div class="container-lg my-2" id="award" style="font-size: 2.0vmin;">
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-10">
-                <p class="my-0" style="color: #1f1e61;"><strong>Awards</strong></p>
-                <hr class="my-1">
-                <ul class="px-3">
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2017</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2018</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2018</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2019</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2019</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Jun. 2020</li>
-                    <li class="py-1">Academic Excellent Award at NCCU Applied Mathematics, Dec. 2020</li>
-                    <li class="py-1">The Memorial Scholarship Foundation to Lin Hsiung Chen, Dec. 2020</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project -->
-    <div class="container-lg my-2" id="project" style="font-size: 2.0vmin;">
-        <div class="row justify-content-center flex-nowrap">
-            <div class="col-10">
-                <p class="my-0" style="color: #1f1e61;"><strong>Projects</strong></p>
-                <hr class="my-1">
-                <ul class="px-3">
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Dec. 2017</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Jun. 2018</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Dec. 2018</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Jun. 2019</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Dec. 2019</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Jun. 2020</li>
-                    <li>Academic Excellent Award at NCCU Applied Mathematics, Dec. 2020</li>
-                    <li>The Memorial Scholarship Foundation to Lin Hsiung Chen, Dec. 2020</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    
-    
-    
-    
     
     <!--jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -353,39 +416,38 @@
     </script>
 </body>
 <footer>
-    <div class="d-flex p-1 justify-content-center bd-highlight bg-dark text-white fixed-bottom">
+    <div class="d-flex p-1 justify-content-center bd-highlight bg-dark text-white">
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="mailto: r10246002@ntu.edu.tw">
                 <i class="bi bi-envelope-fill icon"></i>
-            </button>
+            </a>
         </div>
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="https://www.linkedin.com/in/%E4%BF%8A%E6%86%B2-%E9%99%B3-8b8b0024a/">
                 <i class="bi bi-linkedin icon"></i>
-            </button>
+            </a>
         </div>
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="https://github.com/SeanChenTaipei">
                 <i class="bi bi-github icon"></i>
-            </button>
+            </a>
         </div>
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="https://instagram.com/sean61617?igshid=ZDdkNTZiNTM=">
                 <i class="bi bi-instagram icon"></i>
-            </button>
+            </a>
         </div>
         
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="">
                 <i class="bi bi-facebook icon"></i>
-            </button>
+            </a>
         </div>
         <div class="p-2">
-            <button type="button" class="btn btn-sm btn-secondary rounded-circle">
+            <a type="button" class="btn btn-sm btn-secondary rounded-circle" target="_blank" href="">
                 <i class="bi bi-twitter icon"></i>
-            </button>
+            </a>
         </div>
-        
     </div> 
 </footer>
 </html>
